@@ -23,6 +23,6 @@ urlpatterns = [
     path('api/tracks/',include('tracks.urls')),
     path('api/genres/',include('genres.urls')),
     path('api/artists/',include('artists.urls')),
-    path('api/tracklist/',include('tracklist.urls')),
-    path('api/userplaylist/',include('user_playlist.urls')),
+    # path('api/tracklist/',include('tracklist.urls')),
+    # path('api/userplaylist/',include('user_playlist.urls')),
 ]
