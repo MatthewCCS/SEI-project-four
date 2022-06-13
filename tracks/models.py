@@ -6,7 +6,7 @@ from django.db import models
 class Track(models.Model):
   title = models.CharField(max_length=50, default=None)
   trackUrl = models.CharField(max_length=300, default=None)
-  artist = models.ForeignKey('artists.Artist', on_delete=models.CASCADE)
+  artist = models.ForeignKey('artists.Artist', related_name='artist_track' ,on_delete=models.CASCADE)
   album = models.ForeignKey('albums.Album', null=True, blank=True, on_delete=models.CASCADE)
   genre = models.ManyToManyField('genres.Genre', related_name='albums')
   duration = models.PositiveIntegerField(default=None, null=True, blank=True)

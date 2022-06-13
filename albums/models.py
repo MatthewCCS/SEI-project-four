@@ -10,7 +10,7 @@ class Album(models.Model):
     )
   tracks = models.ForeignKey(
     'tracks.Track',
-    related_name='albums_tracks', on_delete=models.CASCADE
+    related_name='albums_tracks', default=None, on_delete=models.CASCADE
   )
   album_art = models.CharField(max_length=100, default=None)
 
