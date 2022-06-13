@@ -8,3 +8,6 @@ class Artist(models.Model):
   # album = models.ManyToManyField('artists.Artist', related_name='albums')
   # track = models.ManyToOneRel
   info = models.TextField()
+
+  def __str__(self):
+    return f"{self.name}"

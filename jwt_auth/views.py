@@ -5,6 +5,10 @@ from rest_framework import status
 from django.conf import settings
 from datetime import datetime, timedelta
 import jwt
+import environ
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
 
 #import serializer
 from .serializers.common import UserSerializer
@@ -50,7 +54,7 @@ class LoginView(APIView):
         'sub': user_to_validate.id,
         'exp': int(datime.strftime('$s'))
       },
-      settings.SECRET_KEY,
+      env('SECRET_KEY'),
       algorithm='HS256'
     )
 

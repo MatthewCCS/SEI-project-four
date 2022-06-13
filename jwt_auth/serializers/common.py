@@ -19,10 +19,10 @@ class UserSerializer(serializers.ModelSerializer):
         'password_confirmation': 'Does not match password'
       })
 
-    data['pasword'] = make_password(password)
+    data['password'] = make_password(password)
 
     return data
 
-class Meta:
-  model = User
-  fields = ('id', 'email', 'username', 'profile_image', 'password', 'password_confirmation')
+  class Meta:
+    model = User
+    fields = ('id', 'email', 'username', 'profile_image', 'password', 'password_confirmation')

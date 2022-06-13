@@ -5,3 +5,4 @@ class TrackSerializer(ModelSerializer):
   class Meta:
     model = Track
     fields = ('title', 'artist', 'album', 'genre', 'duration' )
+    optional_fields = ['album', 'duration']
