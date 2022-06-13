@@ -8,9 +8,9 @@ class Album(models.Model):
       'genres.Genre', 
       related_name='albums_genre'
     )
-  tracks = models.ForeignKey(
+  tracks = models.ManyToManyField(
     'tracks.Track',
-    related_name='albums_tracks', default=None, on_delete=models.CASCADE
+    related_name='albums_tracks', default=None
   )
   album_art = models.CharField(max_length=100, default=None)
 

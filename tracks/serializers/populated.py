@@ -1,5 +1,5 @@
 from .common import TrackSerializer
-from albums.serializers.common import AlbumSerializer
+from artists.serializers.common import ArtistSerializer
 
 class PoplulatedTrackSerializer(TrackSerializer):
-  albums = AlbumSerializer(many=True)
+  artist = ArtistSerializer()

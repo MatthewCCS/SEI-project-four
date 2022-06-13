@@ -1,0 +1,47 @@
+[
+{
+  "model": "tracks.track",
+  "pk": 3,
+  "fields": {
+    "title": "And So it Begins",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655064150/audio_tracks/And-So-It-Begins_sapvc4.mp3",
+    "artist": 1,
+    "album": 1,
+    "duration": null,
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 4,
+  "fields": {
+    "title": "Downtown Glow",
+    "trackUrl": "w",
+    "artist": 2,
+    "album": 2,
+    "duration": null,
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 5,
+  "fields": {
+    "title": "Bedtime After Coffee",
+    "trackUrl": "1",
+    "artist": 3,
+    "album": null,
+    "duration": null,
+    "genre": [
+      1,
+      2
+    ]
+  }
+}
+]

@@ -1,32 +1,36 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.exceptions import NotFound
+from rest_framework.exceptions import NotFound, PermissionDenied, ValidationError
 from rest_framework import status
 
-#custom import
+#import serializers
 from .models import UserPlaylist
 from .serializers.common import UserPlaylistSerializer
 from .serializers.populated import PopulatedUserPlaylistSerializer
 
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 # UserPlaylistAllView, UserPlaylistDetailview
 #get all 
 class UserPlaylistAllView(APIView):
-  permission_classes = (IsAuthenticatedOrReadOnly, )
+  permission_classes = (IsAuthenticated, )
 #get
   def get(self, _request):
-    playlist = playlist.objects.all()
+    playlist = UserPlaylist.objects.all()
     serialized_playlist = UserPlaylistSerializer(playlist, many=True)
     return Response(serialized_playlist.data, status=status.HTTP_200_OK)
 #post
   def post(self, request):
-    deserialized_playlist = UserPlaylistSerializer(data=request.data)
+    request.data['owner'] = request.user.id
+    playlist_to_add = UserPlaylistSerializer(data=request.data)
     try:
-      deserialized_playlist.is_valid()
-      deserialized_playlist.save()
-      return Response(deserialized_playlist.data, status.HTTP_201_CREATED)
+      playlist_to_add.is_valid(True)
+      playlist_to_add.save()
+      return Response(playlist_to_add.data, status.HTTP_201_CREATED)
+    except ValidationError:
+      return Response(playlist_to_add.errors, status.HTTP_422_UNPROCESSABLE_ENTITY)
     except Exception as e:
       print(type(e))
       print(e)
