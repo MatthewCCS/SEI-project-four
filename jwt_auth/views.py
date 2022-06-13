@@ -40,7 +40,7 @@ class LoginView(APIView):
     email = request.data.get('email')
     password = request.data.get('password')
     try:
-      user_to_validate = User.objects.get(email.email)
+      user_to_validate = User.objects.get(email=email)
     except User.DoesNotExist:
       raise PermissionDenied('Invalid credentials')
 
@@ -52,7 +52,7 @@ class LoginView(APIView):
     token = jwt.encode(
       {
         'sub': user_to_validate.id,
-        'exp': int(datime.strftime('$s'))
+        'exp': int(datime.strftime('%s'))
       },
       env('SECRET_KEY'),
       algorithm='HS256'

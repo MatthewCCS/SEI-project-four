@@ -32,7 +32,7 @@ class TrackDetailView(APIView):
     return Response(serialized_track.data, status.HTTP_200_OK)
 #put
   def put(self, request, pk):
-    track_to_update = self.get_album(pk)
+    track_to_update = self.get_track(pk)
     deserialized_track = TrackSerializer(track_to_update, request.data)
     try:
       deserialized_track.is_valid()
