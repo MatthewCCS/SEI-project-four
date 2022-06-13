@@ -12,5 +12,12 @@
   "fields": {
     "name": "Chill"
   }
+},
+{
+  "model": "genres.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Energetic"
+  }
 }
 ]

@@ -1,12 +1,42 @@
 [
 {
   "model": "tracks.track",
-  "pk": 3,
+  "pk": 1,
+  "fields": {
+    "title": "Workout anders 1",
+    "trackUrl": "1",
+    "artist": 1,
+    "album": null,
+    "duration": null,
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 2,
   "fields": {
     "title": "And So it Begins",
     "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655064150/audio_tracks/And-So-It-Begins_sapvc4.mp3",
-    "artist": 1,
-    "album": 1,
+    "artist": 2,
+    "album": null,
+    "duration": null,
+    "genre": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 3,
+  "fields": {
+    "title": "Bedtime after Coffee",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134285/audio_tracks/barradeen-bedtime-after-a-coffee_c55zrm.mp3",
+    "artist": 4,
+    "album": null,
     "duration": null,
     "genre": [
       1,
@@ -19,9 +49,9 @@
   "pk": 4,
   "fields": {
     "title": "Downtown Glow",
-    "trackUrl": "w",
-    "artist": 2,
-    "album": 2,
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134290/audio_tracks/Ghostrifter-Official-Devyzed-Downtown-Glow_hwedju.mp3",
+    "artist": 3,
+    "album": null,
     "duration": null,
     "genre": [
       1,
@@ -33,13 +63,69 @@
   "model": "tracks.track",
   "pk": 5,
   "fields": {
-    "title": "Bedtime After Coffee",
-    "trackUrl": "1",
-    "artist": 3,
+    "title": "Coffee shop",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134378/audio_tracks/pyc-music-coffee-shop_vfbzqp.mp3",
+    "artist": 5,
     "album": null,
     "duration": null,
     "genre": [
       1,
+      3
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 6,
+  "fields": {
+    "title": "Working Now",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134378/audio_tracks/%E6%A5%AD%E4%B8%AD%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E-Working-now-_r0j9v1.mp3",
+    "artist": 6,
+    "album": null,
+    "duration": null,
+    "genre": [
+      3
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 7,
+  "fields": {
+    "title": "Banger",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134425/audio_tracks/fsm-team-banger_geojaj.mp3",
+    "artist": 7,
+    "album": null,
+    "duration": null,
+    "genre": [
+      3
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 8,
+  "fields": {
+    "title": "Angels Rock",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134420/audio_tracks/twisterium-angels-rock_c6h2di.mp3",
+    "artist": 8,
+    "album": null,
+    "duration": null,
+    "genre": [
+      3
+    ]
+  }
+},
+{
+  "model": "tracks.track",
+  "pk": 9,
+  "fields": {
+    "title": "Chill BGM",
+    "trackUrl": "https://res.cloudinary.com/ddn3rjqii/video/upload/v1655134296/audio_tracks/Cozy-Place-Chill-Background-Music_iep9qj.mp3",
+    "artist": 9,
+    "album": null,
+    "duration": null,
+    "genre": [
       2
     ]
   }
