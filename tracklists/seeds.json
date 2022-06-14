@@ -1,9 +1,2 @@
 [
-{
-  "model": "tracklists.tracklist",
-  "pk": 1,
-  "fields": {
-    "tracks": 3
-  }
-}
 ]

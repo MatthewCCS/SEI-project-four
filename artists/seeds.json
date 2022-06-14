@@ -3,36 +3,88 @@
   "model": "artists.artist",
   "pk": 1,
   "fields": {
-    "name": "Artificial.Music",
-    "info": "Artificial.Music | https://soundcloud.com/artificial-music/\r\nLicensed under Creative Commons: Attribution 3.0 Unported (CC BY 3.0)\r\nhttps://creativecommons.org/licenses/by/3.0/",
-    "album": [
-      1
-    ],
-    "track": [
-      3
-    ]
+    "name": "Jonas78",
+    "info": "",
+    "album": [],
+    "track": []
   }
 },
 {
   "model": "artists.artist",
   "pk": 2,
   "fields": {
-    "name": "Ghostrifter",
-    "info": "Ghostrifter & Devyzed\r\nCreative Commons — Attribution-NoDerivs 3.0 Unported — CC BY-ND 3.0",
-    "album": [
-      2
-    ],
-    "track": [
-      4
-    ]
+    "name": "Artificial.Music",
+    "info": "",
+    "album": [],
+    "track": []
   }
 },
 {
   "model": "artists.artist",
   "pk": 3,
   "fields": {
+    "name": "Ghostrifter",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 4,
+  "fields": {
     "name": "Barradeen",
-    "info": "Barradeen | https://soundcloud.com/barradeen/\r\nCreative Commons Attribution-ShareAlike 3.0 Unported\r\nhttps://creativecommons.org/licenses/by-sa/3.0/deed.en_US",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 5,
+  "fields": {
+    "name": "PYC Music",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 6,
+  "fields": {
+    "name": "Yumi",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 7,
+  "fields": {
+    "name": "< e s c p >",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 8,
+  "fields": {
+    "name": "Twisterium",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 9,
+  "fields": {
+    "name": "Cozy Place",
+    "info": "",
     "album": [],
     "track": []
   }

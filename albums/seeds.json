@@ -3,34 +3,17 @@
   "model": "albums.album",
   "pk": 1,
   "fields": {
-    "title": "Artificial.Music Collection",
-    "album_art": "asdasd",
+    "title": "Puinruimer EP",
+    "album_art": "",
     "artist": [
       1
-    ],
-    "genres": [
-      1
-    ],
-    "tracks": [
-      3
-    ]
-  }
-},
-{
-  "model": "albums.album",
-  "pk": 2,
-  "fields": {
-    "title": "Ghoststrifter",
-    "album_art": "none",
-    "artist": [
-      2
     ],
     "genres": [
       1,
       2
     ],
     "tracks": [
-      4
+      1
     ]
   }
 }
