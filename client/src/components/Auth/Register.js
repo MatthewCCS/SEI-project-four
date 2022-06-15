@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
+import { Button, Paper } from '@mui/material'
 
 
 const Register = () => {
@@ -36,8 +37,15 @@ const Register = () => {
 
   return (
     <section className='form-page'>
-      <div className='login-container'>
-        <form className='login-form' onSubmit={handleSubmit}>
+      <Paper elevation={5} className='reg-container'>
+        <div className='welcome-box'>
+          <h3>Welcome!</h3>
+          <p>Register to access additional features</p>
+          <Link to='/'><button type='button' className='form-submit-btn'>Cancel</button></Link>
+
+
+        </div>
+        <form className='reg-form' onSubmit={handleSubmit}>
           <h1>Register</h1>
           <label htmlFor='email'>Email</label>
           <input type='email' name='email' className='input' placeholder='Email' required value={formData.email} onChange={handleChange}></input>
@@ -47,10 +55,9 @@ const Register = () => {
           <input type='password' name='password' className='input' placeholder='Password' required value={formData.password} onChange={handleChange}></input>
           <label htmlFor='passwordConfirmation'>Password Confimration</label>
           <input type='password' name='passwordConfirmation' className='input' placeholder='Confirm password' required value={formData.passwordConfirmation} onChange={handleChange}></input>
-          <Link to='/'><button type='button' className='form-submit-btn'>Cancel</button></Link>
-          <button type='submit' className='form-submit-btn'>Submit</button>
+          <Button variant='outlined' type='submit' className='form-submit-btn'>Submit</Button>
         </form>
-      </div>
+      </Paper>
     </section>
   )
 }

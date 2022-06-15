@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+@import './components/register';
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 nav{
@@ -15,4 +20,30 @@ nav{
     margin: 0 10px;
 
   }
+}
+
+// ----audioplayer
+.trackinfo {
+  height: 50px;
+  background-color: grey;
+  bottom: auto;
+}
+.audioplayer {
+  position: fixed;
+  bottom: 5px;
+}
+
+//----profile
+
+.profile-box{
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+
+  .profile-user{
+    padding: 10px;
+    text-align: center;
+    min-height: 50px;
+  }
+
 }
