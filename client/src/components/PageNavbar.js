@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 //imports
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { userIsAuthenticated } from './helpers/auth'
+
 
 
 const PageNavBar = () => {
 
+  const navigate = useNavigate
   const handleLogout = () => {
     window.localStorage.removeItem('mMusic-app')
-    Navigate('/')
+    navigate('/')
   }
 
   return (
@@ -21,6 +23,7 @@ const PageNavBar = () => {
         </div>
         {userIsAuthenticated() ?
           <div className='nav-link-box'>
+            <Link className='nav-link' to="/musicDeck">Music Deck</Link>
             <Link className='nav-link' onClick={handleLogout} to='/' >Logout</Link>
             <Link className='nav-link' to="/profile">Profile</Link>
           </div>

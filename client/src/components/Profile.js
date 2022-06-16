@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
-import { Box, Grid, Button, Paper, Container } from '@mui/material'
+import { Box, Grid, Button, Paper, Container, Card, CardMedia, Typography } from '@mui/material'
+import H5AudioPlayer from 'react-h5-audio-player'
 
 const Profile = () => {
 
@@ -24,12 +25,13 @@ const Profile = () => {
     genre: 'all',
   })
 
+  //get all tracks
   useEffect(() => {
     const getTracklist = async () => {
       try {
         const { data } = await axios.get('api/tracks')
         setTracklist(data)
-        console.log(data)
+        console.log(tracklist)
       } catch (error) {
         console.log(error)
       }
@@ -46,30 +48,47 @@ const Profile = () => {
       setTracks(tracksList)
     }
   }, [tracklist])
-  
+
   return (
     <Box>
       <Paper className='profile-box'>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Paper elevation={3} className='profile-user'>User</Paper>
+            <Paper elevation={1} className='profile-user'>Profile</Paper>
           </Grid>
           <Grid item xs={6}>
             <Paper elevation={1} className='Profile-tracklist'>
               <h3>Tracklist</h3>
-              {tracks.map((track) => {
-                console.log(track)
-                return <p key={track.id} value={track}>{track}</p>
+              {tracklist.map(({ id, title, trackUrl, artist }) => {
+                return <p key={id} value={title}>{title} - {artist}</p>
               })
               }
             </Paper>
           </Grid>
           <Grid item xs={6}>
-            <Paper elevation={1} className='Profile-playlist'>My Playlist</Paper>
+            <Paper elevation={1} className='Profile-playlist'>
+              <h3>My Playlists</h3>
+            </Paper>
           </Grid>
-          <Grid item xs={8}>
-            <div>item</div>
-          </Grid>
+          {/* <Grid container justifyContent="center"  spacing={2}>
+            {tracklist.map(({ id, title, trackUrl, artist }) => {
+              return (
+                <Card key={id} className='track-preview-cards' xs={3}>
+                  <CardMedia
+                    component="img"
+                    sx={{ width: 151 }}
+                    image="https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png"
+                    alt="Live from space album cover"
+                  />
+                  <Typography key={id} value={title}>{title} - {artist}</Typography>
+                  <H5AudioPlayer>
+
+                  </H5AudioPlayer>
+                </Card>
+              )
+            })
+            }
+          </Grid> */}
         </Grid>
       </Paper>
 

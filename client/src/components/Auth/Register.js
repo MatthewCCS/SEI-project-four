@@ -5,6 +5,8 @@ import { Button, Paper } from '@mui/material'
 
 
 const Register = () => {
+
+  //------Register
   const navigate = useNavigate()
 
   const [formData, setFormData] = useState({
@@ -32,8 +34,8 @@ const Register = () => {
       console.log(error.response.data)
       setErrors(error.response.data)
     }
-
   }
+  
 
   return (
     <section className='form-page'>
@@ -41,8 +43,6 @@ const Register = () => {
         <div className='welcome-box'>
           <h3>Welcome!</h3>
           <p>Register to access additional features</p>
-          <Link to='/'><button type='button' className='form-submit-btn'>Cancel</button></Link>
-
 
         </div>
         <form className='reg-form' onSubmit={handleSubmit}>

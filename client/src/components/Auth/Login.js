@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { Button, Paper } from '@mui/material'
 
 const Login = () => {
 
@@ -37,17 +38,16 @@ const Login = () => {
   return (
 
     <section className='form-page'>
-      <div className='login-container'>
+      <Paper elevation={5} className='login-container'>
         <form className='login-form' onSubmit={handleSubmit}>
           <h1>Login</h1>
           <label htmlFor='email'>Email</label>
           <input type='email' name='email' className='input' placeholder='Email' required value={formData.email} onChange={handleChange}></input>
           <label htmlFor='password'>Password</label>
           <input type='password' name='password' className='input' placeholder='Password' required value={formData.password} onChange={handleChange}></input>
-          <Link to='/'><button type='button' className='form-submit-btn'>Cancel</button></Link>
-          <button type='submit' className='form-submit-btn'>Login</button>
+          <Button variant='outlined' type='submit' className='form-submit-btn'>Login</Button>
         </form>
-      </div>
+      </Paper>
     </section>
   )
 }

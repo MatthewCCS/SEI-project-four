@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // components
 import Home from './components/Home'
+import MusicDeck from './components/MusicDeck'
 // Auth components
 import PageNavBar from './components/PageNavbar'
 import Register from './components/Auth/Register'
@@ -31,6 +32,7 @@ const App = () => {
         <PageNavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/musicDeck" element={<MusicDeck />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
