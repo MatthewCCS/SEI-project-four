@@ -71,7 +71,7 @@ const Home = () => {
 
           <AudioPlayer className='audioplayer'
             onEnded={handleClickNext}
-            autoPlayAfterSrcChange={false}
+            autoPlayAfterSrcChange={true}
             src={tracks[currentMusicIndex].trackUrl}
             header=' '
             showSkipControls={true}

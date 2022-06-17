@@ -61,23 +61,27 @@ const MusicDeck = () => {
           const { id, title, artist } = tracks
           return (
             <Grid key={id} xs={6} md={4} lg={3} m={1}>
-              <Card sx={{ display: 'flex' }}>
-                <CardMedia
-                  component="img"
-                  alt="album"
-                  sx={{ width: 150 }}
-                  src="https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png"
-                  title="Album"
-                  objectFit="cover"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {title}
-                  </Typography>
-                  {artist}
-                </CardContent>
+              <Link to={`/artists/${id}`} className='music-deck-link'>
+                <Card sx={{ display: 'flex' }}>
+                  <CardMedia
+                    component="img"
+                    alt="album"
+                    sx={{ width: 150 }}
+                    src="https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png"
+                    title="Album"
+                    objectFit="cover"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {title}
+                    </Typography>
+                    <Typography  >
+                      Artist: {artist}
+                    </Typography>
+                  </CardContent>
 
-              </Card>
+                </Card>
+              </Link>
             </Grid>
           )
         })}

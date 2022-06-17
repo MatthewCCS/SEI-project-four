@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // components
 import Home from './components/Home'
 import MusicDeck from './components/MusicDeck'
+import SingleArtist from './components/SingleArtist'
 // Auth components
 import PageNavBar from './components/PageNavbar'
 import Register from './components/Auth/Register'
@@ -33,6 +34,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/musicDeck" element={<MusicDeck />} />
+          <Route path="/artists/:id" element={<SingleArtist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />

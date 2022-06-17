@@ -3,11 +3,12 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import { Box, Grid, Button, Paper, Container, Card, CardMedia, Typography } from '@mui/material'
 import H5AudioPlayer from 'react-h5-audio-player'
+import { getTokenFromLocalStorage } from './helpers/auth'
 
 const Profile = () => {
 
   // get all albums and tracks
-
+  const [userPlaylist, setUserPlaylist] = useState([])
   const [albumlist, serAlbumlist] = useState([])
   const [tracklist, setTracklist] = useState([])
   // dropdown filters
@@ -24,6 +25,26 @@ const Profile = () => {
     track: 'all',
     genre: 'all',
   })
+
+  // user playlist
+  useEffect(() => {
+    const getUserPlaylist = async () => {
+      try {
+
+        const { data } = await axios.get('/api/userplaylist', {
+          headers: {
+            Authorization: `Bearer ${ getTokenFromLocalStorage()}`,
+          },
+        } )
+        setUserPlaylist(data)
+        console.log(userPlaylist)
+      } catch (error) {
+        console.log(error)
+      }
+
+    }
+    getUserPlaylist()
+  }, [])
 
   //get all tracks
   useEffect(() => {

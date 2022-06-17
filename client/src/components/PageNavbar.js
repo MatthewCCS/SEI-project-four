@@ -9,7 +9,7 @@ import { userIsAuthenticated } from './helpers/auth'
 
 const PageNavBar = () => {
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
   const handleLogout = () => {
     window.localStorage.removeItem('mMusic-app')
     navigate('/')
