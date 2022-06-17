@@ -91,25 +91,6 @@ const Profile = () => {
               <h3>My Playlists</h3>
             </Paper>
           </Grid>
-          {/* <Grid container justifyContent="center"  spacing={2}>
-            {tracklist.map(({ id, title, trackUrl, artist }) => {
-              return (
-                <Card key={id} className='track-preview-cards' xs={3}>
-                  <CardMedia
-                    component="img"
-                    sx={{ width: 151 }}
-                    image="https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png"
-                    alt="Live from space album cover"
-                  />
-                  <Typography key={id} value={title}>{title} - {artist}</Typography>
-                  <H5AudioPlayer>
-
-                  </H5AudioPlayer>
-                </Card>
-              )
-            })
-            }
-          </Grid> */}
         </Grid>
       </Paper>
 
