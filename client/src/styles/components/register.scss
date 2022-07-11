@@ -20,7 +20,7 @@
 
     .reg-form{
       padding:10px;
-      width:50%;
+      min-width:250px;
       display:flex;
       flex-direction: column;
       
@@ -54,6 +54,7 @@
     padding:10px;
     display:flex;
     flex-direction: column;
+    width: 250px;
 
     h1{
       text-align: center;

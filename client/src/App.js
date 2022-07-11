@@ -9,8 +9,8 @@ import MusicDeck from './components/MusicDeck'
 import SingleArtist from './components/SingleArtist'
 // Auth components
 import PageNavBar from './components/PageNavbar'
-import Register from './components/Auth/Register'
-import Login from './components/Auth/Login'
+import Register from './components/auth/Register'
+import Login from './components/auth/Login'
 import Profile from './components/Profile'
 // Utility
 import PageNotFound from './components/utilities/PageNotFound.js'

@@ -31,11 +31,11 @@ const Profile = () => {
     const getUserPlaylist = async () => {
       try {
 
-        const { data } = await axios.get('/api/userplaylist', {
+        const { data } = await axios.get('/api/userplaylist/', {
           headers: {
-            Authorization: `Bearer ${ getTokenFromLocalStorage()}`,
+            Authorization: `Bearer ${getTokenFromLocalStorage()}`,
           },
-        } )
+        })
         setUserPlaylist(data)
         console.log(userPlaylist)
       } catch (error) {
@@ -85,14 +85,37 @@ const Profile = () => {
               })
               }
             </Paper>
+
+            {/* {userPlaylist.length > 0 &&
+              <>
+                <Paper className='home-card' elevation={5}>
+                  <div className='album-img'><img src='https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png' /></div>
+                  <div className='home-card-content'>
+                    <Typography variant='h4'>yes</Typography>
+                    <Typography variant='h5'>no</Typography>
+                  </div>
+
+
+                </Paper>
+
+              </>
+            } */}
+
           </Grid>
+
           <Grid item xs={6}>
-            <Paper elevation={1} className='Profile-playlist'>
+            <Paper elevation={1}  sx={{ height: '100%' }} className='Profile-playlist'>
               <h3>My Playlists</h3>
             </Paper>
           </Grid>
+          <Button>Save</Button>
+
         </Grid>
       </Paper>
+
+
+
+
 
     </Box>
   )

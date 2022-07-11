@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const getTracks = async () => {
       try {
-        const { data } = await axios.get('api/tracks')
+        const { data } = await axios.get('api/tracks/')
         console.log(data)
         console.log(data[1].trackUrl)
         setTracks(data)
@@ -81,7 +81,7 @@ const Home = () => {
               [
                 RHAP_UI.LOOP,
                 <div key='aux-tog' className='audio-toggle'>
-                  <p> All</p><Switch key='switch' label='playlist' /><p> User</p>
+                  <p>1</p><Switch key='switch' label='playlist' /><p>2</p>
                 </div>
               ]
             }

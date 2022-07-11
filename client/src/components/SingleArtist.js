@@ -13,7 +13,7 @@ const SingleArtist = () => {
   useEffect(() => {
     const getSingleArtist = async () => {
       try {
-        const { data } = await axios.get(`/api/artists/${id}`)
+        const { data } = await axios.get(`/api/artists/${id}/`)
         console.log(data)
         setSingleArtist(data)
       } catch (error) {

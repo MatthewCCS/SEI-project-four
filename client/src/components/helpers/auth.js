@@ -2,7 +2,7 @@ export const getTokenFromLocalStorage = () => {
   return window.localStorage.getItem('mMusic-app')
 }
 
-// taking the token, splitting it up and returning the payload thats encoded
+// // taking the token, splitting it up and returning the payload thats encoded
 const getPayload = () => {
   const token = getTokenFromLocalStorage()
   if (!token) return
@@ -10,7 +10,7 @@ const getPayload = () => {
   return JSON.parse(atob(payload))
 }
 
-// checking to see if user is authenticated
+// // checking to see if user is authenticated
 export const userIsAuthenticated = () => {
   const payload = getPayload()
   if (!payload) return false
@@ -18,9 +18,9 @@ export const userIsAuthenticated = () => {
   return currentTime < payload.exp
 }
 
-// checking that user id from payload matches playlist user id
-export const userIsOwner = (singleReview) => {
-  const payload = getPayload()
-  if (!payload) return
-  return singleReview.addedBy._id === payload.sub
-}
+// // checking that user id from payload matches playlist user id
+// export const userIsOwner = (singleReview) => {
+//   const payload = getPayload()
+//   if (!payload) return
+//   return singleReview.addedBy._id === payload.sub
+// }

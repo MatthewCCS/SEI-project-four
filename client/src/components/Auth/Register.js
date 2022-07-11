@@ -40,11 +40,7 @@ const Register = () => {
   return (
     <section className='form-page'>
       <Paper elevation={5} className='reg-container'>
-        <div className='welcome-box'>
-          <h3>Welcome!</h3>
-          <p>Register to access additional features</p>
-
-        </div>
+      
         <form className='reg-form' onSubmit={handleSubmit}>
           <h1>Register</h1>
           <label htmlFor='email'>Email</label>

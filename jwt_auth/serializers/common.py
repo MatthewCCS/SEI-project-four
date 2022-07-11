@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
   def validate(self, data):
 
     password = data.pop('password')
-    passwordConfirmation = data.pop('password_confirmation')
+    passwordConfirmation = data.pop('passwordConfirmation')
     
     if password != passwordConfirmation:
       raise ValidationError({

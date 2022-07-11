@@ -17,7 +17,7 @@ const MusicDeck = () => {
   useEffect(() => {
     const getTracks = async () => {
       try {
-        const { data } = await axios.get('api/tracks')
+        const { data } = await axios.get('api/tracks/')
         console.log(data)
         setTracks(data)
       } catch (error) {
