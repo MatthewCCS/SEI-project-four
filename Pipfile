@@ -9,6 +9,7 @@ pylint = "*"
 djangorestframework = "*"
 pyjwt = "*"
 django-environ = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 
