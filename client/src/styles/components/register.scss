@@ -1,0 +1,75 @@
+
+.form-page{
+  padding: 10px;
+  margin: 10px auto;
+  // border: 1px solid grey;
+  width: 70vw;
+  display: flex;
+  
+
+  .reg-container{
+    display: flex;
+    margin:auto;
+    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+    .welcome-box{
+      padding:10px;
+      width:50%;
+      // border: 1px solid grey;
+    }
+
+    .reg-form{
+      padding:10px;
+      min-width:250px;
+      display:flex;
+      flex-direction: column;
+      
+      h1{
+        text-align: center;
+      }
+      label, input {
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+      input{
+        border: none;
+        border-bottom: 1px solid ;
+      }
+      .form-submit-btn {
+        margin-top:10px;
+        width: 100%;
+  
+      }
+    }
+
+}
+
+.login-container{
+  display: flex;
+  margin:auto;
+  // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+  .login-form{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+
+    h1{
+      text-align: center;
+    }
+    label, input {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+    input{
+      border: none;
+      border-bottom: 1px solid ;
+    }
+    .form-submit-btn {
+      margin-top:10px;
+      width: 100%;
+
+    }
+  }

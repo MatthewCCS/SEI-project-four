@@ -1,0 +1,20 @@
+[
+{
+  "model": "albums.album",
+  "pk": 1,
+  "fields": {
+    "title": "Puinruimer EP",
+    "album_art": "",
+    "artist": [
+      1
+    ],
+    "genres": [
+      1,
+      2
+    ],
+    "tracks": [
+      1
+    ]
+  }
+}
+]

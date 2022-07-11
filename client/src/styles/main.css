@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap");
+.form-page {
+  padding: 10px;
+  margin: 10px auto;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-page .reg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.form-page .welcome-box {
+  padding: 10px;
+  width: 50%;
+}
+
+.form-page .reg-form {
+  padding: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-page .reg-form h1 {
+  text-align: center;
+}
+
+.form-page .reg-form label, .form-page .reg-form input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.form-page .reg-form input {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.form-page .reg-form .form-submit-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.login-form {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form h1 {
+  text-align: center;
+}
+
+.login-form label, .login-form input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.login-form input {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.login-form .form-submit-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background-color: #716767;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  background-color: #181819;
+  color: azure;
+  -webkit-box-shadow: 0 2px 0 grey;
+          box-shadow: 0 2px 0 grey;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: azure;
+}
+
+.player-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin-inline: auto;
+}
+
+.home-card {
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.album-img {
+  width: 90%;
+}
+
+.home-card-content {
+  padding: 20px;
+}
+
+.trackinfo {
+  width: 100vw;
+  height: 50px;
+  background-color: grey;
+  bottom: 115px;
+  text-align: center;
+  color: black;
+}
+
+.audioplayer {
+  position: fixed;
+  bottom: 0;
+}
+
+Switch {
+  color: black;
+}
+
+.audio-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rhap_additional-controls {
+  width: 5%;
+}
+
+.profile-box {
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.profile-box .profile-user {
+  padding: 10px;
+  text-align: center;
+  min-height: 50px;
+}
+
+.track-preview-cards {
+  width: 300px;
+}
+
+.md-form {
+  padding: 10px;
+  text-align: center;
+}
+
+.md-form label {
+  margin-right: 10px;
+}
+
+.music-deck-link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

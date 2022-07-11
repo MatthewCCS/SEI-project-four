@@ -1,0 +1,23 @@
+[
+{
+  "model": "genres.genre",
+  "pk": 1,
+  "fields": {
+    "name": "LoFi"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Chill"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Energetic"
+  }
+}
+]

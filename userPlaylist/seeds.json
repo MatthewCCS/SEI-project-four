@@ -1,0 +1,14 @@
+[
+{
+  "model": "userPlaylist.userplaylist",
+  "pk": 1,
+  "fields": {
+    "name": "Coffee List",
+    "owner": 2,
+    "tracks": [
+      3,
+      5
+    ]
+  }
+}
+]

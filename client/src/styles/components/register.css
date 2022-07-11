@@ -1,0 +1,89 @@
+.form-page {
+  padding: 10px;
+  margin: 10px auto;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-page .reg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.form-page .welcome-box {
+  padding: 10px;
+  width: 50%;
+}
+
+.form-page .reg-form {
+  padding: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-page .reg-form h1 {
+  text-align: center;
+}
+
+.form-page .reg-form label, .form-page .reg-form input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.form-page .reg-form input {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.form-page .reg-form .form-submit-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.login-form {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form h1 {
+  text-align: center;
+}
+
+.login-form label, .login-form input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.login-form input {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.login-form .form-submit-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+/*# sourceMappingURL=register.css.map */

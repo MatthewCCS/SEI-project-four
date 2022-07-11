@@ -1,0 +1,92 @@
+[
+{
+  "model": "artists.artist",
+  "pk": 1,
+  "fields": {
+    "name": "Jonas78",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 2,
+  "fields": {
+    "name": "Artificial.Music",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 3,
+  "fields": {
+    "name": "Ghostrifter",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 4,
+  "fields": {
+    "name": "Barradeen",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 5,
+  "fields": {
+    "name": "PYC Music",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 6,
+  "fields": {
+    "name": "Yumi",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 7,
+  "fields": {
+    "name": "< e s c p >",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 8,
+  "fields": {
+    "name": "Twisterium",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+},
+{
+  "model": "artists.artist",
+  "pk": 9,
+  "fields": {
+    "name": "Cozy Place",
+    "info": "",
+    "album": [],
+    "track": []
+  }
+}
+]
