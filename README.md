@@ -2,7 +2,7 @@
 
 # Project 4 - mMusic.App
 
-![mMusic.App](./Screenshots/mmusicapp.png)
+![mMusic.App](./screenshots/mmusicapp.png)
 
 ## Overview
 
@@ -35,7 +35,7 @@ Brief: Build a full stack application
 
 Wireframe
 
-![Wireframe](./Screenshots/wireframe.png)
+![Wireframe](./screenshots/wireframe.png)
 
 
 Entity relationship diagram
@@ -101,21 +101,19 @@ mMusic.App is a music player that plays preset music tracks, registered users ca
 Overall it was a great learning experience on the necessity of good planning and time management.
 
 ### Challenges
+
 Trying to code the actually audio player from scratch was probably not the best use of time
 Time management. If I used at package instead of trying to code from scratch a lost of the missing features may have been implemented
 
 
 ### Wins
+
 A major lesson learnt about the importance of careful planning and not being stubborn over a problem that could be solved easily with an existing solution
 Adapting the typescript code back into JSX so the media player controls will function properly
 Custom authentication using JWT instead of the default django authentication
 Being able to plan and build a music app when a few months prior, I wouldn’t even know where to start
 
-### Dev Journal
-
-<details>
-
-<summary>Click</summary>  
+## Dev Journal
 
 ### Approach
 For my final project I decided to go solo to test where I am right now. I chose to make a music app with an ambiance toggle. Unregistered members will have limited functionality while registered and logged in members will have access to more features.
@@ -186,7 +184,6 @@ I spent too much time trying to fix what's currently beyond my current learning,
 
 I spent a little too much time over the custom audio player that I need to cut some features from my app. Unfortunately it has become just a regular audio player without the ambiance selection feature I wanted. In the end this project ended up more like a work in progress rather than a completed app but it was a great learning experience.
 
-</details>
 
 
 ## Potential future updates
