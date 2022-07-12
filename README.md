@@ -122,9 +122,9 @@ As with the previous project I will tackle this from the back end first then foc
  
 #### Day 1 - Planning and setup
 
-![Wireframe](./Screenshots/wireframe.png)
+![Wireframe](./screenshots/wireframe.png)
 
-![entity_relationship_diag(./screenshots/ERD.png)
+![entity_relationship_diag](./screenshots/ERD.png)
 
 Setup git repo files - main, development, feature branches
 Setup project files
