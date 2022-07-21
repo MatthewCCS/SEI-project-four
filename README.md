@@ -59,6 +59,7 @@ Entity relationship diagram
 
 ![!](https://img.shields.io/static/v1?style=plastic&logo=python&logoColor=white&labelColor=&label=&message=Python&color=333333)
 ![!](https://img.shields.io/static/v1?style=plastic&logo=django&logoColor=white&labelColor=&label=&message=Django&color=333333)
+![!](https://img.shields.io/static/v1?style=plastic&logo=postgresql&logoColor=white&labelColor=&label=&message=PostgreSQL&color=333333)
 ![!](https://img.shields.io/static/v1?style=plastic&logo=heroku&logoColor=violet&labelColor=&label=&message=Heroku&color=333333)
 
 
