@@ -71,53 +71,54 @@ const Profile = () => {
   }, [tracklist])
 
   return (
-    <Box>
-      <Paper className='profile-box'>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Paper elevation={1} className='profile-user'>Profile</Paper>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper elevation={1} className='Profile-tracklist'>
-              <h3>Tracklist</h3>
-              {tracklist.map(({ id, title, trackUrl, artist }) => {
-                return <p key={id} value={title}>{title} - {artist}</p>
-              })
-              }
-            </Paper>
+    <h1>profile</h1>
+    // <Box>
+    //   <Paper className='profile-box'>
+    //     <Grid container spacing={2}>
+    //       <Grid item xs={12}>
+    //         <Paper elevation={1} className='profile-user'>Profile</Paper>
+    //       </Grid>
+    //       <Grid item xs={6}>
+    //         <Paper elevation={1} className='Profile-tracklist'>
+    //           <h3>Tracklist</h3>
+    //           {tracklist.map(({ id, title, trackUrl, artist }) => {
+    //             return <p key={id} value={title}>{title} - {artist}</p>
+    //           })
+    //           }
+    //         </Paper>
 
-            {/* {userPlaylist.length > 0 &&
-              <>
-                <Paper className='home-card' elevation={5}>
-                  <div className='album-img'><img src='https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png' /></div>
-                  <div className='home-card-content'>
-                    <Typography variant='h4'>yes</Typography>
-                    <Typography variant='h5'>no</Typography>
-                  </div>
-
-
-                </Paper>
-
-              </>
-            } */}
-
-          </Grid>
-
-          <Grid item xs={6}>
-            <Paper elevation={1}  sx={{ height: '100%' }} className='Profile-playlist'>
-              <h3>My Playlists</h3>
-            </Paper>
-          </Grid>
-          <Button>Save</Button>
-
-        </Grid>
-      </Paper>
+  //         {/* {userPlaylist.length > 0 &&
+  //           <>
+  //             <Paper className='home-card' elevation={5}>
+  //               <div className='album-img'><img src='https://res.cloudinary.com/ddn3rjqii/image/upload/v1655286046/genericAlbum_olbhs5.png' /></div>
+  //               <div className='home-card-content'>
+  //                 <Typography variant='h4'>yes</Typography>
+  //                 <Typography variant='h5'>no</Typography>
+  //               </div>
 
 
+  //             </Paper>
+
+  //           </>
+  //         } */}
+
+  //       </Grid>
+
+  //       <Grid item xs={6}>
+  //         <Paper elevation={1}  sx={{ height: '100%' }} className='Profile-playlist'>
+  //           <h3>My Playlists</h3>
+  //         </Paper>
+  //       </Grid>
+  //       <Button>Save</Button>
+
+  //     </Grid>
+  //   </Paper>
 
 
 
-    </Box>
+
+
+  // </Box>
   )
 }
 export default Profile

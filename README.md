@@ -192,7 +192,7 @@ I spent a little too much time over the custom audio player that I need to cut s
 <details>
 <summary>Improvements</summary>
 
-  - [ ] Fulfil original idea
+  - [ ] Fulfill original idea
   	- [ ] Limited operation for non registered users
   	- [ ] Ambiance toggle
  	- [ ] Registered user playlist toggle

@@ -39,9 +39,9 @@ else:
     SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -110,11 +110,21 @@ if str(os.getenv('ENVIRONMENT')) == 'development':
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': env('DATABASE_NAME'),
         'HOST': env('DATABASE_HOST'),
+        'USER' :env('DATABASE_USER'),
+        'PASSWORD' :env('DATABASE_PASSWORD'),
         'PORT': env('DATABASE_PORT')
     }
 else:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2', # this specifies postgres as the db to use
+#         'NAME': 'mmusicdb', # name of db, needs to be created manually ' createdb record-store'
+#         'HOST': 'localhost', # host where our database isrunning, in our casr localhost
+#         'PORT': '5432' # this is the port our postgresql server is running on
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

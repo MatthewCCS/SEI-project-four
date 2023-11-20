@@ -25,7 +25,7 @@ const PageNavBar = () => {
           <div className='nav-link-box'>
             <Link className='nav-link' to="/musicDeck">Music Deck</Link>
             <Link className='nav-link' onClick={handleLogout} to='/' >Logout</Link>
-            <Link className='nav-link' to="/profile">Profile</Link>
+            {/* <Link className='nav-link' to="/profile">Profile</Link> */}
           </div>
           :
           <div className='nav-link-box'>
