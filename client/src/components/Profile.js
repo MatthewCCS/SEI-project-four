@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import { Box, Grid, Button, Paper, Container, Card, CardMedia, Typography } from '@mui/material'
 import H5AudioPlayer from 'react-h5-audio-player'
-import { getTokenFromLocalStorage } from './helpers/Auth'
+import { getTokenFromLocalStorage } from './Helpers/Auth'
 
 const Profile = () => {
 

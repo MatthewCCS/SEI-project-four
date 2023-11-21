@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 //imports
 import { Link, useNavigate } from 'react-router-dom'
-import { userIsAuthenticated } from './helpers/Auth'
+import { userIsAuthenticated } from './Helpers/Auth'
 
 
 
