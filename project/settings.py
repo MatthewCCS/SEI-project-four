@@ -1,6 +1,5 @@
 
 import environ
-import django_on_heroku
 """
 Django settings for project project.
 
@@ -41,7 +40,7 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1',env('DATABASE_HOST')]
+ALLOWED_HOSTS = ['supabase.com','localhost', '127.0.0.1']
 
 
 # Application definition
@@ -184,4 +183,4 @@ REST_FRAMEWORK = {
     ]
 }
 
-django_on_heroku.settings(locals())
+
