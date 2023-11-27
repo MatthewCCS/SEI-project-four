@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const getTracks = async () => {
       try {
-        const { data } = await axios.get('api/tracks/')
+        const { data } = await axios.get('/api/tracks/')
         console.log(data)
         console.log(data[1].trackUrl)
         setTracks(data)
